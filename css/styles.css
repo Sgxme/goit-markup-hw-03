@@ -48,6 +48,10 @@ a {
     color: inherit;
 }
 
+header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 /* #endregion */
 
 /* #region Common */
@@ -126,9 +130,8 @@ a {
 .navigation-list-item {
     font-weight: 500;
     color: #2E2F42;
-    display: flex;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    display: block;
+    padding: 24px 0;
 }
 
 .contacts {
@@ -164,13 +167,13 @@ a {
 /* #endregion */
 
 /* #region Hero */
-.hero {}
+.hero {
+    padding: 188px 0;
+}
 
 .hero-con {
     text-align: center;
-    padding-top: 188px;
     padding-right: 316px;
-    padding-bottom: 188px;
     padding-left: 316px;
 }
 
@@ -196,6 +199,7 @@ a {
     padding: 16px 32px;
     min-width: 169px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none
 }
 
 .btn:hover,
@@ -248,10 +252,13 @@ a {
     padding-bottom: 120px;
 }
 
+.team-list-con {
+    padding: 32px 16px;
+}
+
 .team-list-item {
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
-    padding-bottom: 32px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -263,14 +270,11 @@ a {
 }
 
 .team-list-item-member {
-    text-align: center;
-    margin-top: 32px;
-    margin-bottom: 8px;    
+    text-align: center;   
 }
 
 .team-list-item-desc {
     text-align: center;
-    margin-bottom: 32px;
 }
 /* #endregion */
 
@@ -287,12 +291,13 @@ a {
 .portfolio-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 48px 24px;
 }
 
 .portfolio-item {
     border: 1px solid #e7e9fc;
     background-color: #fff;
+    width: 360px;
 }
 
 .portfolio-item img {
