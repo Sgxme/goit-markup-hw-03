@@ -98,6 +98,10 @@ header {}
     margin: 0 auto;
 }
 
+.section {
+    padding: 120px 0;
+}
+
 /* #endregion */
 
 /* #region Navigation */
@@ -138,7 +142,7 @@ header {}
 }
 
 .contacts {
-    display: flex;
+    display: inline-block;
     margin-left: auto;
 }
 
@@ -229,7 +233,9 @@ header {}
     width: calc((100% - 72px) / 4);
 }
 
-.features-headline {}
+.features-headline {
+    margin-bottom: 8px;
+}
 
 .features-desc {}
 /* #endregion */
